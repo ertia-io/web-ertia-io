@@ -1,0 +1,6 @@
+baseURL = "https://ertia.io"
+title = "Ertia"
+
+[markup.goldmark.parser.attribute]
+block = true
+title = true
