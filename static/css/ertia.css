@@ -98,7 +98,7 @@ h2 {
     color: rgb(212, 138, 0);
 }
 
-/*
+
 .anim {
     animation: 
     typewriterTitle 0.5s steps(5) 1s 1 normal both,
@@ -106,7 +106,7 @@ h2 {
     border-right: 2px solid transparent;
     animation-delay: 0.5s;
 }
-*/
+
 @keyframes typewriterTitle {
     from{width: 0;}
     to{width: 2.35em;}
@@ -115,12 +115,12 @@ h2 {
     from{border-right-color: rgba(255, 255, 255, 0.75);}
     to{border-right-color: transparent;}
 }
-/*
+
 .fade-in-anim {
     animation: fadeIn 1s ease-in both;
     animation-delay: 1s;
 }
-*/
+
 @keyframes fadeIn {
     from{
         opacity: 0;
