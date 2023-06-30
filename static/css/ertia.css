@@ -138,25 +138,126 @@ h2 {
 
 
 /* TERMINAL */
+
 .typing-text {
     position: relative;
-    margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
     width: 5em;
-}
-
-.pop-up-text:nth-child(1) {
-    animation: fadeIn 0.01s ease-in both;
-}
-
-.typing-text:nth-child(2) {
     animation: typewriter 0.5s steps(5) 1s 1 normal both;
-    animation-delay: 0.2s;
 }
 
-.pop-up-text:nth-child(2) {
+.pop-up-text {
     animation: fadeIn 0.01s ease-in both;
-    animation-delay: 1.3s;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+
+.t1 {
+    animation-delay: 3.0s;
+}
+
+.p1 {
+    animation-delay: 3.8s;
+}
+
+.p2 {
+    animation-delay: 3.9s;
+}
+
+.t2 {
+    animation-delay: 4.3s;
+}
+
+.p3 {
+    animation-delay: 4.9s;
+}
+
+.t3 {
+    animation-delay: 5.3s;
+}
+
+.p4 {
+    animation-delay: 5.9s;
+}
+
+.t4 {
+    animation: typewriter 1s steps(30) 1s 1 normal both;
+    width: 20em;
+    animation-delay: 6.3s;
+}
+
+.p5 {
+    animation-delay: 7.5s;
+}
+
+.t5 {
+    animation-delay: 7.9s;
+}
+
+.p6 {
+    animation-delay: 8.3s;
+}
+
+.p7 {
+    animation-delay: 8.8s;
+}
+
+.t6 {
+    animation-delay: 9.2s;
+}
+
+.multiple-pop-up {
+    display: flex;
+    flex-direction: column;
+}
+
+.p8 {
+    animation-delay: 9.8s;
+}
+.p9 {
+    animation-delay: 10s;
+}
+.p10 {
+    animation-delay: 10.2s;
+}
+.p11 {
+    animation-delay: 10.4s;
+}
+.p12 {
+    animation-delay: 10.6s;
+}
+.p13 {
+    animation-delay: 11s;
+}
+.p14 {
+    animation-delay: 11.5s;
+}
+.p15 {
+    animation-delay: 11.8s;
+}
+.p16 {
+    animation-delay: 12s;
+}
+.p17 {
+    animation-delay: 12.2s;
+}
+.p18 {
+    animation-delay: 12.5s;
+}
+.p19 {
+    animation-delay: 13s;
+}
+.p20 {
+    animation-delay: 13.2s;
+}
+.p21 {
+    animation-delay: 13.4s;
+}
+.p22 {
+    animation-delay: 13.6s;
 }
