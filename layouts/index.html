@@ -1,48 +1,72 @@
 {{ partial "header.html" . }}
 
 <body>
-    <section class="background-image"></section>
-    <article class="information">
-        <h1 class="title anim">Ertia</h1>
-        <section class="fade-in-anim">
-            <h2>An open source software for something</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque maxime similique enim, distinctio ipsam? Magni illum eius ea ullam cupiditate, quidem ipsam mollitia eligendi voluptate necessitatibus libero eaque excepturi a et ex ducimus repellendus tempora aut, velit sequi deserunt, inventore enim! Ullam et natus nobis similique quaerat eos dolores laudantium.<br/><br/>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id repellendus velit veniam doloribus similique? At accusamus dolore ratione in, ab unde quaerat aut, facilis vero sint sit corrupti obcaecati aliquid itaque eius! Accusantium.</p>
+    <section class="body-wrapper">
+        <!--<section class="background-image"></section>-->
+        <article class="information">
+            <h1 class="title anim">Ertia</h1>
+            <section class="fade-in-anim">
+                <h3>An <span class="olive">open source</span> software for something</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque maxime similique enim, distinctio ipsam? Magni illum eius ea ullam cupiditate, quidem ipsam mollitia eligendi voluptate necessitatibus libero eaque excepturi a et ex ducimus repellendus tempora aut, velit sequi deserunt, inventore enim! Ullam et natus nobis similique quaerat eos dolores laudantium.<br/><br/>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id repellendus velit veniam doloribus similique? At accusamus dolore ratione in, ab unde quaerat aut, facilis vero sint sit corrupti obcaecati aliquid itaque eius! Accusantium.</p>
+                <a href="#contact-section"><button>Contact</button></a>
+            </section>
+        </article>
+        <section class="terminal fade-in-anim">
+            <p><span class="green-text pop-up-text">&#10142;<span class="blue-text"> ertia git:(</span><span class="red-text">experiment</span><span class="blue-text">)</span> <span class="orange-text">&#10007;</span></span><span class="typing-text t1">./ert dm</span></p>
+    
+            <p class="pop-up-text p1">&nbsp; <span class="green-text">&#10004; [E] [R] [T] I A</span></p>
+    
+            <p><span class="pop-up-text p2"><span class="green-text">?</span> New project </span><span class="blue-text typing-text t2">Setup</span></p>
+    
+            <p><span class="pop-up-text p3"><span class="green-text">?</span> Select Provider </span><span class="blue-text typing-text t3">K3D</span></p>
+    
+            <p><span class="pop-up-text p4"><span class="green-text">?</span> Project ID </span><span class="blue-text typing-text t4">ertia-2KsD1iW89bRcbG1TFlMnJYxfo4Y</span></p>
+    
+            <p><span class="pop-up-text p5"><span class="green-text">?</span> Choose Bundles </span><span class="blue-text typing-text t5">Basic</span></p>
+    
+            <p class="pop-up-text p6">&nbsp; <span class="green-text">&#10004; Select bundles</span> <span class="gray-text">(0s)</span></p>
+    
+            <p><span class="pop-up-text p7"><span class="green-text">?</span> Apply changes? </span><span class="blue-text typing-text t6">Yes</span></p>
+            
+            <span class="green-text multiple-pop-up">
+                <p class="pop-up-text p8">&nbsp; &#10004; Requesting access to provider: K3D <span class="gray-text">(0s)</span></p>
+                <p class="pop-up-text p9">&nbsp; &#10004; Setting up machines on: K3D</p>
+                <p class="pop-up-text p10">&nbsp; &#10004; Normalizing and hardening virtual machines</p>
+                <p class="pop-up-text p11">&nbsp; &#10004; Seeding cluster secrets</p>
+                <p class="pop-up-text p12">&nbsp; &#10004; Deploying the Bundle: Basic <span class="gray-text">(0s)</span></p>
+                <p class="pop-up-text p13">&nbsp; &#10004; Automatic certificate management</p>
+                <p class="pop-up-text p14">&nbsp; &#10004; SQL Database (postgres)</p>
+                <p class="pop-up-text p15">&nbsp; &#10004; Routing and security</p>
+                <p class="pop-up-text p16">&nbsp; &#10004; CI/CD Pipelines</p>
+                <p class="pop-up-text p17">&nbsp; &#10004; Logs, metrics, dashboard and alerting</p>
+                <p class="pop-up-text p18">&nbsp; &#10004; Deploying: Git</p>
+                <p class="pop-up-text p19">&nbsp; &#10004; Container Registry</p>
+                <p class="pop-up-text p20">&nbsp; &#10004; Builds: Deploying</p>
+                <p class="pop-up-text p21">&nbsp; &#10004; Provisioning: Deploying</p>
+    
+                <p class="pop-up-text p22"><span class="green-text">&#10142;</span><span class="blue-text"> ertia git:(</span><span class="red-text">experiment</span><span class="blue-text">)</span> <span class="orange-text">&#10007;</span></p>
+            </span>
         </section>
-    </article>
-    <section class="terminal fade-in-anim">
-        <p><span class="green-text pop-up-text">&#10142;<span class="blue-text"> ertia git:(</span><span class="red-text">experiment</span><span class="blue-text">)</span> <span class="orange-text">&#10007;</span></span><span class="typing-text t1">./ert dm</span></p>
-
-        <p class="pop-up-text p1">&nbsp; <span class="green-text">&#10004; [E] [R] [T] I A</span></p>
-
-        <p><span class="pop-up-text p2"><span class="green-text">?</span> New project </span><span class="blue-text typing-text t2">Setup</span></p>
-
-        <p><span class="pop-up-text p3"><span class="green-text">?</span> Select Provider </span><span class="blue-text typing-text t3">K3D</span></p>
-
-        <p><span class="pop-up-text p4"><span class="green-text">?</span> Project ID </span><span class="blue-text typing-text t4">ertia-2KsD1iW89bRcbG1TFlMnJYxfo4Y</span></p>
-
-        <p><span class="pop-up-text p5"><span class="green-text">?</span> Choose Bundles </span><span class="blue-text typing-text t5">Basic</span></p>
-
-        <p class="pop-up-text p6">&nbsp; <span class="green-text">&#10004; Select bundles</span> <span class="gray-text">(0s)</span></p>
-
-        <p><span class="pop-up-text p7"><span class="green-text">?</span> Apply changes? </span><span class="blue-text typing-text t6">Yes</span></p>
-        
-        <span class="green-text multiple-pop-up">
-            <p class="pop-up-text p8">&nbsp; &#10004; Requesting access to provider: K3D <span class="gray-text">(0s)</span></p>
-            <p class="pop-up-text p9">&nbsp; &#10004; Setting up machines on: K3D</p>
-            <p class="pop-up-text p10">&nbsp; &#10004; Normalizing and hardening virtual machines</p>
-            <p class="pop-up-text p11">&nbsp; &#10004; Seeding cluster secrets</p>
-            <p class="pop-up-text p12">&nbsp; &#10004; Deploying the Bundle: Basic <span class="gray-text">(0s)</span></p>
-            <p class="pop-up-text p13">&nbsp; &#10004; Automatic certificate management</p>
-            <p class="pop-up-text p14">&nbsp; &#10004; SQL Database (postgres)</p>
-            <p class="pop-up-text p15">&nbsp; &#10004; Routing and security</p>
-            <p class="pop-up-text p16">&nbsp; &#10004; CI/CD Pipelines</p>
-            <p class="pop-up-text p17">&nbsp; &#10004; Logs, metrics, dashboard and alerting</p>
-            <p class="pop-up-text p18">&nbsp; &#10004; Deploying: Git</p>
-            <p class="pop-up-text p19">&nbsp; &#10004; Container Registry</p>
-            <p class="pop-up-text p20">&nbsp; &#10004; Builds: Deploying</p>
-            <p class="pop-up-text p21">&nbsp; &#10004; Provisioning: Deploying</p>
-
-            <p class="pop-up-text p22"><span class="green-text">&#10142;</span><span class="blue-text"> ertia git:(</span><span class="red-text">experiment</span><span class="blue-text">)</span> <span class="orange-text">&#10007;</span></p>
-        </span>
     </section>
+    <section id="contact-section" class="fade-in-anim">
+        <article>
+            <h2>Interested?</h2>
+            <h3>Let us contact you.</h3>
+        </article>
+        <form>
+            <div class="input-sections">
+                <div>
+                    <label for="name">Name:</label><br/>
+                    <input class="text-input" type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label><br/>
+                    <input class="text-input" type="text" id="email" name="email">
+                </div>
+            </div>
+            <br/>
+            <input type="submit" value="Send" class="submit">
+        </form>
+    </section>
+
 </body>
