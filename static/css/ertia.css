@@ -170,6 +170,7 @@ button:hover {
     align-items: center;
     border-radius: 5px;
     padding: 60px 60px;
+    text-align: center;
 }
 
 .information h3 {
