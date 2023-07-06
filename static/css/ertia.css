@@ -25,37 +25,9 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 88vh;
-    margin: 0 200px;
+    margin: 100px 200px 0 200px;
     column-gap: 100px;
 }
-
-/*
-.background-image {
-    position: fixed;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/img/aurora.jpg");
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    z-index: -1;
-
-    &:before {
-        content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: linear-gradient(#18181b,#18181b);
-            opacity: .6; 
-      }
-}
-*/
 
 header {
     height: 12vh;
@@ -85,10 +57,33 @@ header ul {
 }
 
 header ul li a {
+    display: inline-block;
+    position: relative;
     color: #181922;
     text-decoration: none;
     padding: none;
+    transition: all 0.3s ease-in-out;
 }
+
+header ul li a:before {
+    content: '';
+    background-color: #1819224d;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    transition: width 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+    background-position: 0;
+  }
+  
+header ul li a:hover::before {
+    width: 100%;
+  }
 
 a {
     color: #181922;
@@ -97,7 +92,7 @@ a {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 300;
     font-family: 'Playfair Display';
 }
@@ -112,24 +107,33 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 3.1rem;
     font-weight: 200;
     margin-bottom: 30px;
     font-family: 'Playfair Display';
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     font-weight: 200;
     font-family: 'Playfair Display';
+}
+
+h4 {
+    font-size: 1.18rem;
+    font-family: 'Playfair Display';
+}
+
+.hero-text {
+    line-height: 3.5em;
 }
 
 .olive {
     color: #526534;
 }
 
-.information {
-    width: 50%;
+.hero-information {
+    width: 55%;
 }
 
 button {
@@ -150,11 +154,39 @@ button:hover {
     cursor: pointer;
 }
 
+.information-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.information {
+    width: 40%;
+    height: 500px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 60px 60px;
+}
+
+.information h3 {
+    margin: 5px 0 15px 0;
+}
+
+.information h4 {
+    text-align: center;
+}
+
+
 #contact-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 
 #contact-section article {
@@ -204,8 +236,12 @@ input[type=text]:focus {
 
 .input-sections {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 150%;
+}
+
+#margin {
+    margin-top: 10px;
 }
 
 
@@ -426,6 +462,10 @@ input[type=text]:focus {
         box-shadow: #101010 0px 8px 24px;
     }
 
+    header ul li a:before {
+        background-color: #ffffff4d;
+    }
+
     a {
         color: white;
     }
@@ -445,7 +485,6 @@ input[type=text]:focus {
 
     input[type=text]:focus {
         border-bottom: 1px solid white;
-        background-color: transparent;
     }
 
     .olive {
@@ -465,14 +504,26 @@ input[type=text]:focus {
         border: 1px solid #749245;
         color: #749245;
     }
+
+    .information {
+        box-shadow: #101010 0px 8px 24px;
+    }
 }
 
 
 
 @media only screen and (max-width: 1300px) {
     .body-wrapper {
-        margin: 0px 100px;
+        margin: 0px 90px;
         column-gap: 50px;
+    }
+
+    .hero-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .hero-information {
+        width: 60%;
     }
 }
 
@@ -486,7 +537,15 @@ input[type=text]:focus {
         height: 100%;
         width: 100%;
         margin-bottom: 100px;
-        
+    }
+
+    header {
+        justify-content: start;
+        padding-left: 30px;
+    }
+
+    header ul {
+        right: 10%;
     }
 
     .body-wrapper {
@@ -495,11 +554,7 @@ input[type=text]:focus {
         row-gap: 100px;
         margin: 50px 20px 100px 20px;
         padding: 0;
-    }
-
-    header ul {
-        right: 5%;
-        display: none;
+        align-items: center;
     }
 
     .terminal {
@@ -507,7 +562,7 @@ input[type=text]:focus {
         height: 575px;
     }
 
-    .information {
+    .hero-information {
         width: 80%;
     }
 
@@ -525,6 +580,19 @@ input[type=text]:focus {
 
     .input-sections {
         flex-direction: column;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+    }
+
+    .information-section {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .information {
+        width: 70%;
     }
 }
 

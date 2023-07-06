@@ -1,5 +1,6 @@
 baseURL = "https://ertia.io"
 title = "Ertia"
+theme = "hugo-starter"
 
 [markup.goldmark.parser.attribute]
 block = true
